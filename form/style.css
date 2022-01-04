@@ -69,8 +69,14 @@ form {
   margin-bottom: 15px;
 }
 
-.file input {
+.file_input {
+  display: none;
+}
+
+.file_label {
+  border: 1px solid black;
+  padding: 5px 10px;
+  cursor: pointer;
   font-size: 12px;
   text-align: center;
-  margin: 0 auto;
 }
