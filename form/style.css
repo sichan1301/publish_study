@@ -1,0 +1,76 @@
+form {
+  display: flex;
+  max-width: 70%;
+  flex-direction: column;
+  border: 1px solid black;
+  align-items: center;
+  margin: 5% auto;
+}
+
+.subject {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 15px;
+}
+.subject_label {
+  width: 80px;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 3px;
+  font-size: 12px;
+  text-align: center;
+  background: darkcyan;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+}
+
+.subject_radio {
+  display: none;
+}
+
+.subject_radio:checked + .subject_label {
+  background: rgb(1, 58, 58);
+}
+
+.study {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 15px;
+}
+
+.study_checkbox {
+  display: none;
+}
+
+.study_label {
+  width: 60px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 3px;
+  font-size: 12px;
+  text-align: center;
+  background: darkcyan;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+}
+
+.study_checkbox:checked + .study_label {
+  background: rgb(1, 58, 58);
+}
+
+.file {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.file input {
+  font-size: 12px;
+  text-align: center;
+  margin: 0 auto;
+}

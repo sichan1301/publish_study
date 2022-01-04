@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+</head>
+<body>
+    <form>
+        <h1>form 요소 연습</h1>
+        
+        <h2>1. 좋아하는 과목을 고르세요 (택1) </h2>
+        
+        <div class="subject">
+            
+            <input class="subject_radio" name="subject" type="radio" id="HTML">
+            <label class="subject_label" name ="subject" for="HTML">HTML</label>
+
+            <input class="subject_radio" name="subject" type="radio" id="CSS">
+            <label class="subject_label" for="CSS">CSS</label>
+            
+            <input class="subject_radio" name="subject" type="radio" id="JavaScript">
+            <label class="subject_label" for="JavaScript">JavaScript</label>
+        </div>
+
+        
+        <h2>2. 스터디할 과목을 고르세요 (다중선택 가능)</h2>
+        
+        <div class="study">
+                
+            <input class="study_checkbox" type="checkbox" name="study" id="react">
+            <label class="study_label"    for="react">React</label>
+
+            <input class="study_checkbox" type="checkbox" name="" id="node.js">
+            <label class="study_label"    for="node.js">node.js</label>
+
+            <input class="study_checkbox" type="checkbox" name="" id="spring">
+            <label class="study_label"    for="spring">Spring</label>
+
+            <input class="study_checkbox" type="checkbox" name="" id="django">
+            <label class="study_label"    for="django">Django</label>
+
+            <input class="study_checkbox" type="checkbox" name="" id="oracle">
+            <label class="study_label"    for="oracle">Oracle</label>
+            
+        </div>
+        
+        <h2>3. 신분증을 첨부해주세요</h2>
+        
+        <div class="file">
+            <input class="file" type="file" name="" id="">
+        </div>
+    </form>
+</body>
+</html>
