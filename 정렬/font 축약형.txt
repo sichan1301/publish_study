@@ -1,0 +1,4 @@
+font-size, font family 는 반드시 들어가야 한다.
+그 외의 속성값이 빠지면 default 값으로 들어간다.
+
+순서: font-style , font-variant, font-weight, font-size/line-height, font-family
