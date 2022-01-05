@@ -6,8 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        @keyframes moving{
+            0%{
+                transform: translate(0,0);
+            }
+            25%{
+                transform: translate(650px,0);
+            }
+            50%{
+                transform: translate(650px,34vh);
+            }
+            75%{
+                transform: translate(0,34vh);
+            }
+            100%{
+                transform: translate(0,0);
+            }
+        }
+
+        @keyframes mydog{
+            0%{
+                transform: translate(500px,500px);
+            }
+
+            100%{
+                transform: translate(500px,0);
+            }
+
+        }
         body {
             background:url('./images/dummy_1.jpg') no-repeat center center/cover;
+            position:relative;
         }
         
         ul,li {
@@ -147,6 +176,7 @@
             left:50%;
             top:50%;
             transform:translate(-50%, -50%);          
+            
         }
 
         
@@ -176,7 +206,7 @@
         .btn_side{
             position:absolute;
             width:100%;
-            top:250px;
+            top:225px;
             display:flex;
             justify-content: space-between;
         }
@@ -211,9 +241,25 @@
             border-radius: 50%;
             background-color:rgb(85, 83, 83);
         }
+
+        .ball{
+            position:absolute;
+            border-radius: 50%;
+            background-color: burlywood;
+            width:60px;
+            height:60px;
+            animation: moving 6s infinite linear;
+        }
+
+        .mydog{
+            width:150px;
+            height:250px;
+            animation: mydog 3s linear;
+            -webkit-animation-fill-mode:both
+        }
     </style>
 </head>
-<body>
+<div>
 
     <a href="javascript:void(0);" class="btnPlus">+</a>
     <ul class="gnb">
@@ -261,7 +307,7 @@
                     <a href="javascript:void(0);" class="btn next">NEXT</a>
                 </div>
         
-            </div>
+        </div>
             <ul class="indicator">
                 <li>
                     <a href="#">
@@ -279,7 +325,9 @@
                     </a>
                 </li> 
             </ul>
-
+            <div class="ball"></div>
+            <img class="mydog" src="../mydog.jpg" alt="mydog">
+        </div>
     </div>
 
 </body>
