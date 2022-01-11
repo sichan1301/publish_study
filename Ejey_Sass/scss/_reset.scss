@@ -1,88 +1,156 @@
-@charset "utf-8"; 
+@charset "utf-8";
 // 볼드체 인 프로퍼티를 일반굵기로 리셋
 
 /* 
     원래 css 주석문
-*/ 
+*/
 
-body, h1,h2,h3,h4,h5,h6, p, dl, dt,dd,ul,ol,li,
-blockquote, fieldset
-{ margin:0; padding:0; }
-
-a { text-decoration:none;color:inherit;}
-mark { background-color:transparent; color:inherit;}
-
-h1,h2,h3,h4,h5,h6 {
-    font-size:inherit;
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+blockquote,
+fieldset {
+  margin: 0;
+  padding: 0;
 }
 
-h1,h2,h3,h4,h5,h6,strong,b,th {
-    font-weight:inherit;
+a {
+  text-decoration: none;
+  color: inherit;
+}
+mark {
+  background-color: transparent;
+  color: inherit;
 }
 
-ul,ol,li {
-    list-style:none;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
 }
 
-i, em, address {
-    font-style:inherit;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+b,
+th {
+  font-weight: inherit;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+i,
+em,
+address {
+  font-style: inherit;
 }
 
 table {
-    border-spacing:0;
-    border-collapse:collapse;
+  border-spacing: 0;
+  border-collapse: collapse;
 }
 
-th, td {
-    border:1px solid red;
+th,
+td {
+  border: 1px solid red;
 }
 
 fieldset {
-    border:none; /* border:0 */
-    /* border: width style color */ 
+  border: none; /* border:0 */
+  /* border: width style color */
 }
 
 input[type="text"]::placeholder {
-    color:olive;
-    font-style:italic;
+  color: olive;
+  font-style: italic;
 }
 
 input[type="text"]:focus {
-    background-color:olive;
-    color:#fff;
+  background-color: olive;
+  color: #fff;
 }
 
 input[type="search"] {
-    
 }
 
 input[type="checkbox"] {
+  &:hover {
+    background: green;
+    border: 2px solid green;
+  }
 
+  &:focus {
+    outline: 2px solid green;
+    outline-offset: 2px;
+  }
+
+  &:checked {
+    background: url(../images/check-mark-g4e6e5dfde_1280.png);
+    background-repeat: no-repeat;
+    border: 2px solid green;
+  }
 }
 
 input[type="radio"] {
+  &:hover {
+    background: green;
+    border: 2px solid green;
+  }
 
+  &:focus {
+    outline: 2px solid green;
+    outline-offset: 2px;
+  }
+
+  &:checked {
+    background: url("../images/check-mark-g4e6e5dfde_1280.png");
+    background-repeat: no-repeat;
+    border: 2px solid green;
+  }
 }
 
 button {
-    cursor:pointer;
+  cursor: pointer;
 }
 
 caption {
-    // caption-side: bottom;
+  // caption-side: bottom;
 }
 
-.blind, hr, legend {
-    position: absolute;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
+.blind,
+hr,
+legend {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
 }
 
-
-q:before, 
+q:before,
 q:after {
-    content:'';
+  content: "";
 }
