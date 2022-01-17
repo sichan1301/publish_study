@@ -59,6 +59,7 @@
 }
 
 #section2 {
+  height: 100vh;
   padding: 3em 9em;
   header {
     display: flex;
@@ -102,8 +103,10 @@
       justify-content: center;
       list-style: none;
       background-color: #f3f3f3;
-      height: 15em;
-      padding: 0 2.5em 1.3em;
+      height: auto;
+      padding: 20px 40px 35px;
+      width: 100%;
+      height: auto;
       transition: all 0.3s;
       cursor: pointer;
       &:hover {
@@ -146,6 +149,87 @@
           left: 45px;
           font-weight: 900;
         }
+      }
+    }
+  }
+}
+
+#section3 {
+  // background: url(../img/coffee-gef986d86c_1920.jpg) no-repeat top;
+  background-color: black;
+  opacity: 0.7;
+  height: 100vh;
+  padding: 3em 9em;
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 999;
+    .section3_title {
+      font-size: 2.6rem;
+      font-weight: 900;
+      word-spacing: -0.2em;
+      color: #fff;
+    }
+
+    .section3_subtitle {
+      color: #fff;
+      font-size: 1rem;
+      position: relative;
+      font-weight: 550;
+      margin-right: 8em;
+      word-spacing: 0;
+      &::before {
+        position: absolute;
+        display: block;
+        content: " ";
+        background-color: #fff;
+        top: 7px;
+        left: -90px;
+        width: 60px;
+        height: 3px;
+      }
+    }
+  }
+
+  ul {
+    padding: 0;
+    margin-bottom: 3em;
+    display: flex;
+    height: 65%;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #fff;
+    span {
+      font-size: 3rem;
+      margin-bottom: 0.3em;
+    }
+    li {
+      margin: 0 auto;
+      padding: 2em;
+      width: 25%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-right: 1px solid #fff;
+      &:last-child {
+        border-right: none;
+      }
+
+      dt {
+        margin-bottom: 0.5em;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 900;
+        color: #fff;
+      }
+
+      dd {
+        color: #fff;
+        margin: 0 auto;
       }
     }
   }
